@@ -1,0 +1,24 @@
+/* 臺灣道路標線圖鑑：全站唯一樣式檔。顏色只用下方變數，不在頁面內寫 style。 */
+:root{--bg:#f6f7f5;--card:#fff;--ink:#1d2321;--muted:#5b6461;--line:#d8ddd9;--accent:#2f6b4f;--asphalt:#3b403e;--mark-white:#f4f4ee;--mark-yellow:#e2b40c}
+@media (prefers-color-scheme:dark){:root{--bg:#161a19;--card:#1f2523;--ink:#e8ece9;--muted:#a3ada8;--line:#333b38;--accent:#7cc6a0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+a{color:var(--accent)}
+header.site,footer.site{padding:12px 16px;border-bottom:1px solid var(--line);background:var(--card)}
+footer.site{border-top:1px solid var(--line);border-bottom:0;margin-top:48px;color:var(--muted);font-size:14px;text-align:center}
+.brand{font-weight:800;text-decoration:none;color:var(--ink);border-left:6px solid var(--mark-yellow);padding-left:10px}
+main{max-width:980px;margin:0 auto;padding:0 16px}
+.hero{padding:32px 0 8px}.hero h1{font-size:2rem;margin:0 0 8px}.quick{font-size:15px}
+.group h2{border-bottom:2px solid var(--line);padding-bottom:4px;margin-top:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--accent)}
+.card img{width:100%;height:auto;border-radius:8px}
+.card strong{font-size:1.1rem}.card .sum{color:var(--muted);font-size:14px}
+.badge{display:inline-block;align-self:flex-start;background:var(--asphalt);color:var(--mark-white);border-radius:6px;padding:0 8px;font-size:13px;font-weight:700;vertical-align:middle}
+.page h1{margin:8px 0}.crumb{font-size:14px;color:var(--muted);margin-top:16px}.lead{font-size:1.1rem}
+figure{margin:16px 0}figure img{width:100%;height:auto;border-radius:10px;display:block}
+figcaption,.note{color:var(--muted);font-size:13px}
+table{border-collapse:collapse;width:100%;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{width:6em;white-space:nowrap}
+.verify{border-left:4px solid var(--mark-yellow);background:var(--card);padding:8px 12px;font-size:14px}

@@ -1,0 +1,24 @@
+{
+ "id": "000",
+ "article": "第000條",
+ "slug": "000-pinyin-short-name",
+ "name": "標線名稱",
+ "aliases": [
+  "俗稱1"
+ ],
+ "group": "禁制標線、指示標線 或 警告標線（擇一）",
+ "color": "白／黃／紅",
+ "pattern": "實線／虛線／雙實線／實線配虛線／圖形",
+ "dims": "照條文寫尺寸（公分、公尺）",
+ "meaning": "照條文寫意義",
+ "where": "照條文寫設置地點",
+ "crossing": "照條文寫；條文沒寫就加註（整理說明）",
+ "misread": [
+  "一句一個常見誤解，附條號"
+ ],
+ "related": [
+  "相關條號"
+ ],
+ "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040014",
+ "verify": "（選填）條文尚未與現行版原文逐字比對時寫明原因；比對完成後刪除此欄"
+}
