@@ -87,6 +87,7 @@ AGENTS.md / CLAUDE.md      AI 協作規則（CLAUDE.md 只指向本檔）
 2. 複製範本填入 slug `183-1-kuaiman-fenge`、group `指示標線`；因只讀到 102 年附件，填了 `verify`。
 3. 在 `diagrams.py` 加 `svg_183_1()`，`DRAW` 加 `"183-1"`。
 4. build → check 全部通過（1 則待查證提醒），CHANGELOG 加一行。
+5. 使用者提供現行版原文後逐字比對：刪除「距人行道 2 公尺」（舊版內容）、補上慢車道機車與自行車圖案的規定，移除 `verify`，再 build → check。
 
 ## 9. 其他修改
 - 改樣式：只改 `assets/style.css`，用 `:root` 的顏色變數；手機寬度不得出現水平捲動。

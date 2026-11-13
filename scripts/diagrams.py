@@ -86,9 +86,10 @@ def svg_183_1():
     y0=40; h=240; s=head(h,"快慢車道分隔線示意")+road(y0,3)+f'<rect x="20" y="{y0+3*LANE}" width="{VW-40}" height="{2*M}" fill="#9aa39c"/>'
     s+=solid(y0+2,Y,10)+dash(y0+LANE,4,6)+solid(y0+2*LANE,W,10)
     for i in range(3): s+=arrow(380,y0+LANE*(i+.5))
-    s+=label(VW-30,y0+1.5*LANE+5,"快車道",anchor="end",size=13,color="#fff")+label(VW-30,y0+2.5*LANE+5,"慢車道（≥ 2 m）",anchor="end",size=13,color="#fff")
+    s+=label(VW-30,y0+1.5*LANE+5,"快車道",anchor="end",size=13,color="#fff")+label(VW-30,y0+2.5*LANE+5,"慢車道",anchor="end",size=13,color="#fff")
     s+=label(VW/2,y0+3*LANE+16,"人行道",anchor="middle",size=13)
-    s+=label(20,24,"白實線 10 cm：劃分快車道與慢車道，距人行道或路緣至少 2 m")+scale(h-14)
+    s+=label(150,y0+2.5*LANE+5,"機車｜自行車圖案",anchor="middle",size=12,color="#fff")
+    s+=label(20,24,"白實線 10 cm：劃分快車道與慢車道；慢車道內併排繪機車、自行車圖案")+scale(h-14)
     return s+"</svg>"
 def svg_189_1():
     y0=40; s=head(220,"穿越虛線示意")+road(y0,2)+f'<rect x="200" y="{y0+2*LANE}" width="{VW-220}" height="{LANE}" fill="{ASP}"/>'
